@@ -54,6 +54,15 @@ public class LoopExercises {
         //  When the target is found, set result to "Found at [row][col]" and
         //  use 'break search;' to exit both loops.
 
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (matrix[i][j] == target) {
+                    result = "Found at [" + i + "][" + j +"]";
+                    break;
+                }
+            }
+        }
+
         return result;
     }
 
