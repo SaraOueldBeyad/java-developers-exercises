@@ -26,6 +26,16 @@ public class LoopExercises {
         // TODO: 2 - Loop from 1 to n. Use 'continue' to skip multiples of 3.
         //  Use 'break' to stop if sum exceeds 100. Add the current number to sum otherwise.
 
+        for (int i = 0; i < n; i++) {
+            if (i % 3 == 0) {
+                continue;
+            }
+            if (sum > 100) {
+                break;
+            }
+            sum += i;
+        }
+
         return sum;
     }
 
