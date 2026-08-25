@@ -150,6 +150,14 @@ public class LoopExercises {
         //  Each iteration: increment attempts, generate a random int between 1 and 100,
         //  and break if it matches the target.
 
+        while(true){
+            attempts++;
+            int tmp = random.nextInt(101);
+            if (tmp == target){
+                break;
+            }
+        }
+
         return attempts;
     }
 
