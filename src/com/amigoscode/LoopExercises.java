@@ -100,6 +100,16 @@ public class LoopExercises {
         //  For each row i (0-based), print (rows - i - 1) spaces followed by (2 * i + 1) stars.
         //  Print a newline after each row.
 
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < rows - i -1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < (2 * i + 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
     }
 
     /**
